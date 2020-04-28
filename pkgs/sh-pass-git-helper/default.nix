@@ -1,12 +1,12 @@
 { stdenv, fetchFromGitHub }:
 
 stdenv.mkDerivation rec {
-  name = "sh-todo";
+  name = "sh-pass-git-helper";
   src = fetchFromGitHub {
     owner = "owm111";
-    repo = "sh-todo";
-    rev = "461e9e9a0c8886edc4fcd1f55e61fd4db99a1454";
-    sha256 = "1fzn9caqmv1z0jci6k7nnhf3zdqs60vgjdfrpi3p0gvl41hh0z40";
+    repo = "sh-pass-git-helper";
+    rev = "6a6198f31d3be1714bc8eba1917115a969347cb0";
+    sha256 = "1y8mmmri004447nrr060akhdvhc1kzmzfyphjd9j6ck1y29ygcs1";
   };
-  installPhase = "install -Dvm 755 todo $out/bin/todo";
+  installPhase = "install -Dvm 755 pass-git-helper $out/bin/pass-git-helper";
 }
