@@ -5,8 +5,8 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "owm111";
     repo = "sh-todo";
-    rev = "461e9e9a0c8886edc4fcd1f55e61fd4db99a1454";
-    sha256 = "1fzn9caqmv1z0jci6k7nnhf3zdqs60vgjdfrpi3p0gvl41hh0z40";
+    rev = "3eab4dd598e6f3f29abe851531ed25d22fd05b18";
+    sha256 = "04p2n3w0dqjfy913aw1vackg28sdhpc8rj13xshfwz2p25bc668z";
   };
   installPhase = "install -Dvm 755 todo $out/bin/todo";
 }
