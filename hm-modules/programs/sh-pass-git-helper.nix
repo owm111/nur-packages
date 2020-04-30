@@ -5,9 +5,8 @@ with lib;
 let
   cfg = config.programs.git.sh-pass-git-helper;
   package = (pkgs.callPackage ../../pkgs/sh-pass-git-helper { }).override {
-    cases = builtins.toFile "cases.txt" (
-      concatStringsSep "\n" (mapAttrsToList (k: v: "${k}) printf '${v}' ;;") cfg.cases)
-    );
+    cases = builtins.toFile "cases.txt" (concatStringsSep "\n"
+      (mapAttrsToList (k: v: "${k}) printf '${v}' ;;") cfg.cases));
   };
 in {
   options = {
