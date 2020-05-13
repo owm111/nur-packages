@@ -19,4 +19,5 @@ rec {
   sh-pass-git-helper = pkgs.callPackage pkgs/sh-pass-git-helper { };
   sh-scr = pkgs.callPackage pkgs/sh-scr { inherit hacksaw; };
   sh-todo = pkgs.callPackage pkgs/sh-todo { };
+  vim-todotxt = pkgs.callPackage pkgs/vim-todotxt { };
 }
